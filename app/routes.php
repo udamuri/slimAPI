@@ -19,3 +19,6 @@ $app->get('/', function ($request, $response, $args) {
 $app->get('/test', '\App\Controllers\UserController:test');
 $app->get('/details', '\App\Controllers\UserController:userInfo');
 
+//post
+$app->post('/photos/create', '\App\Controllers\UserController:createPhotos');
+

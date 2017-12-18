@@ -2,6 +2,7 @@
 namespace tests;
 
 use PHPUnit\Framework\TestCase;
+use App\Core\Formula;
 
 class MuriTest extends TestCase
 {
@@ -35,6 +36,17 @@ class MuriTest extends TestCase
     public function testAssertTrue()
     {
         $this->assertTrue(true);
+    }
+
+    public function testSum()
+    {
+    	$a = 100;
+    	$b = 5;
+
+    	$model = new Formula($a, $b);
+    	$result = $model->sumbu();
+
+    	$this->assertEquals($result, 500);
     }
 
 }

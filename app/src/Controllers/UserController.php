@@ -23,7 +23,13 @@ class UserController extends Container{
 		return $this->json->render($response,$rsp);
 	}
 
+	public function createPhotos($request, $response, $args)
+	{	
+		$contentType = $request->getHeader('Content-Type');
+		$body = json_decode($request->getBody());
+
+	    return $this->json->render($response, $body);
+	}
+
 
 }
-
-?>
