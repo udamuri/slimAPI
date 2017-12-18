@@ -1,0 +1,12 @@
+.DS_Store
+.idea
+
+/vendor
+composer.lock
+
+*.sublime-project
+*.sublime-workspace
+*.phar
+*.log
+
+app/src/Middleware/JsonResponse.php
