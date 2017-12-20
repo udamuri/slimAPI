@@ -10,3 +10,4 @@ composer.lock
 *.log
 
 app/src/Middleware/JsonResponse.php
+/nbproject/private/
