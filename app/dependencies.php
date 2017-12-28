@@ -36,9 +36,3 @@ $container['json'] = function ($c) {
     return new App\Renders\JsonApiView;
 };
 
-
-$container['HomeController'] = function ($c) {
-    return new \App\Controllers\HomeController;
-};
-
-?>
